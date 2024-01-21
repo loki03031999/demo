@@ -7,4 +7,6 @@ RUN apt-get install -y maven
 RUN apt-get install -y openjdk-21-jre
 RUN git clone https://github.com/loki03031999/demo.git
 WORKDIR /usr/demo/demo/
+RUN git checkout -b temp
+RUN git pull origin temp
 RUN mvn clean install
