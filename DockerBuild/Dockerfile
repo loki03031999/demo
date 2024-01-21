@@ -4,4 +4,4 @@ RUN apt-get install -y git
 RUN apt-get install -y maven
 RUN apt-get install -y openjdk-21-jre
 WORKDIR /usr/src
-ENTRYPOINT ["/bin/bash build.sh"]
+CMD ["/bin/bash", "/usr/src/build.sh"]
